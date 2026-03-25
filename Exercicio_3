@@ -1,0 +1,28 @@
+AtividDE3
+
+#include <stdio.h>
+
+int main() {
+    // Notas dos funcionários (produtividade, qualidade, pontualidade)
+    int A[3] = {8, 7, 9};
+    int B[3] = {6, 4, 10};
+
+    int pontosA = 0;
+    int pontosB = 0;
+    int i;
+
+    // Comparação das notas
+    for(i = 0; i < 3; i++) {
+        if(A[i] > B[i]) {
+            pontosA++;
+        } else if(B[i] > A[i]) {
+            pontosB++;
+        }
+    }
+
+    // Resultado final
+    printf("Pontos do Funcionario A: %d\n", pontosA);
+    printf("Pontos do Funcionario B: %d\n", pontosB);
+
+    return 0;
+}
