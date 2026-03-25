@@ -1,0 +1,33 @@
+Atividade 4
+
+#include <stdio.h>
+
+int main() {
+    char s[51];
+    int vogais = 0, consoantes = 0;
+    int i = 0;
+
+    printf("Digite a string: ");
+    fgets(s, 51, stdin);
+
+    while(s[i] != '\0') {
+        char c = s[i];
+
+        // Verifica se é letra minúscula
+        if(c >= 'a' && c <= 'z') {
+
+            // Verifica se é vogal
+            if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+                vogais++;
+            } else {
+                consoantes++;
+            }
+        }
+
+        i++;
+    }
+
+    printf("%d %d\n", vogais, consoantes);
+
+    return 0;
+}
