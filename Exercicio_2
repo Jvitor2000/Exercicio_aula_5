@@ -1,9 +1,7 @@
-Atividade 2
-
 #include <stdio.h>
 
 int main() {
-    int reproducoes[] = {120, 150, 80, 200, 300, 250};
+    int reproducoes[] = {70, 30, 120, 100, 50, 60};
     int tamanho = 6;
 
     int maiorSoma = 0;
