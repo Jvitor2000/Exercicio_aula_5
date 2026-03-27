@@ -1,11 +1,9 @@
-Atividade 1
-
 #include <stdio.h>
 
 int main() {
-    int precos[] = {10, 20, 35, 50, 75};
+    int precos[] = {70, 20, 45, 55, 75};
     int tamanho = 5;
-    int alvo = 55;
+    int alvo = 100;
 
     int i, j;
     int encontrou = 0;
